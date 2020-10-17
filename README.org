@@ -5,3 +5,6 @@ Doing is a tiny utility inspired by https://brettterpstra.com/projects/doing/, I
 Config files is at ~/.doing.yml, the only config item at the moment is Path that point to where your org-roam is.
 
 It takes what you write after doing, at the end pf the file prefixed with "- " and a timestamp
+
+Example: 
+When I type this into a terminal: doing hello world. The following is added to the end of the file ~/txt/roam/2020-10-17.org: - 14:53:09: hello world
