@@ -1,0 +1,7 @@
+* Doing
+
+Doing is a tiny utility inspired by https://brettterpstra.com/projects/doing/, I just did something simpler that works with my org-roam setup.
+
+Config files is at ~/.doing.yml, the only config item at the moment is Path that point to where your org-roam is.
+
+It takes what you write after doing, at the end pf the file prefixed with "- " and a timestamp
