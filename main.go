@@ -30,7 +30,7 @@ func success(){
 	current := now.Format("15:04:05")
 	today:= now.Format("2006-01-02")
 
-	filename := utils.ReplaceTilde(fmt.Sprintf("%s/%s.org", conf.Path, today))
+	filename := utils.ReplaceTilde(fmt.Sprintf("%s/daily/%s.org", conf.Path, today))
 
 	content, err := ioutil.ReadFile(filename)
 	if err != nil{
@@ -41,7 +41,7 @@ func success(){
 
 	lines := strings.Split(string(content), "\n")
 	if lines[len(lines)-1] == ""{
-		lines = lines[0:len(lines)-2]
+		lines = lines[0:len(lines)-1]
 	}
 	lines = append(lines, fmt.Sprintf("- %s: %s", current, text))
 
